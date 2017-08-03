@@ -100,7 +100,7 @@ def row_by_record(idl_, table, record):
     if rl.table is None:
         raise ValueError(_("Table %s can only be queried by UUID") % table)
     if rl.column is None:
-        raise NotImplementedError(_("'.' searches are not implemented"))
+        raise NotImplementedError(_("'.' searches are not implemented-praveen"))
     row = row_by_value(idl_, rl.table, rl.column, record)
     if rl.uuid_column:
         rows = getattr(row, rl.uuid_column)
